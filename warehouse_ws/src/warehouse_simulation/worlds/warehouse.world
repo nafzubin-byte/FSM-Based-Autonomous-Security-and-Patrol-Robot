@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="warehouse_world">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+    <model name="pentagon_warehouse"><static>true</static><pose>0 0 0 0 0 0</pose>
+    <link name="wall_0"><pose>-7.281152949374525 10.02164727970446 1 0 0 -2.5132741228718345</pose><collision name="col"><geometry><box><size>18.0 0.6 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>18.0 0.6 2</size></box></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    <link name="corner_0"><pose>9.375721106763908e-16 15.311714550336719 1 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    
+    <link name="wall_1"><pose>-11.781152949374526 -3.8279286375841783 1 0 0 -1.2566370614359175</pose><collision name="col"><geometry><box><size>18.0 0.6 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>18.0 0.6 2</size></box></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    <link name="corner_1"><pose>-14.562305898749052 4.7315800090722036 1 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    
+    <link name="wall_2"><pose>-2.6645352591003757e-15 -12.387437284240562 1 0 0 -1.9737298215558337e-16</pose><collision name="col"><geometry><box><size>18.0 0.6 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>18.0 0.6 2</size></box></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    <link name="corner_2"><pose>-9.000000000000002 -12.38743728424056 1 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    
+    <link name="wall_3"><pose>11.781152949374526 -3.827928637584183 1 0 0 1.256637061435917</pose><collision name="col"><geometry><box><size>18.0 0.6 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>18.0 0.6 2</size></box></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    <link name="corner_3"><pose>8.999999999999996 -12.387437284240564 1 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    
+    <link name="wall_4"><pose>7.281152949374528 10.021647279704458 1 0 0 2.5132741228718345</pose><collision name="col"><geometry><box><size>18.0 0.6 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>18.0 0.6 2</size></box></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    <link name="corner_4"><pose>14.562305898749054 4.731580009072198 1 0 0 0</pose><collision name="col"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.3</radius><length>2</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual></link>
+    </model>
+    
+    <!-- Security Office -->
+    <model name="security_office"><static>true</static><pose>6.0 -10.6 0 0 0 0</pose>
+      <link name="sec_wall_left"><pose>-1.5 0 1 0 0 0</pose><collision name="col"><geometry><box><size>0.2 3.2 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.2 3.2 2</size></box></geometry><material><ambient>0.3 0.3 0.3 1</ambient></material></visual></link>
+      <link name="sec_wall_right"><pose>1.5 0 1 0 0 0</pose><collision name="col"><geometry><box><size>0.2 3.2 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>0.2 3.2 2</size></box></geometry><material><ambient>0.3 0.3 0.3 1</ambient></material></visual></link>
+      <link name="sec_wall_back"><pose>0 -1.5 1 0 0 0</pose><collision name="col"><geometry><box><size>3.2 0.2 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>3.2 0.2 2</size></box></geometry><material><ambient>0.3 0.3 0.3 1</ambient></material></visual></link>
+      <link name="sec_wall_front"><pose>0.4 1.5 1 0 0 0</pose><collision name="col"><geometry><box><size>2.0 0.2 2</size></box></geometry></collision><visual name="vis"><geometry><box><size>2.0 0.2 2</size></box></geometry><material><ambient>0.3 0.3 0.3 1</ambient></material></visual></link>
+      <link name="table"><pose>0.5 -0.5 0.4 0 0 0</pose><collision name="col"><geometry><box><size>1.0 1.5 0.8</size></box></geometry></collision><visual name="vis"><geometry><box><size>1.0 1.5 0.8</size></box></geometry><material><ambient>0.6 0.3 0.1 1</ambient></material></visual></link>
+    </model>
+
+    <!-- Obstacles -->
+    <model name="red_obstacle_1"><static>true</static><pose>-7.0 1.0 0.5 0 0 0</pose><link name="link"><collision name="col"><geometry><box><size>1.2 1.2 1.0</size></box></geometry></collision><visual name="vis"><geometry><box><size>1.2 1.2 1.0</size></box></geometry><material><ambient>0.8 0.1 0.1 1</ambient></material></visual></link></model>
+    <model name="red_obstacle_2"><static>true</static><pose>-4.0 6.0 0.5 0 0 0</pose><link name="link"><collision name="col"><geometry><cylinder><radius>0.6</radius><length>1.0</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.6</radius><length>1.0</length></cylinder></geometry><material><ambient>0.8 0.1 0.1 1</ambient></material></visual></link></model>
+    <model name="red_obstacle_3"><static>true</static><pose>-6.0 -6.0 0.5 0 0 0.785</pose><link name="link"><collision name="col"><geometry><box><size>1.5 0.5 1.0</size></box></geometry></collision><visual name="vis"><geometry><box><size>1.5 0.5 1.0</size></box></geometry><material><ambient>0.8 0.1 0.1 1</ambient></material></visual></link></model>
+    <model name="red_obstacle_4"><static>true</static><pose>6.0 7.0 0.5 0 0 0</pose><link name="link"><collision name="col"><geometry><cylinder><radius>0.7</radius><length>1.0</length></cylinder></geometry></collision><visual name="vis"><geometry><cylinder><radius>0.7</radius><length>1.0</length></cylinder></geometry><material><ambient>0.8 0.1 0.1 1</ambient></material></visual></link></model>
+    <model name="yellow_obstacle_top"><static>true</static><pose>0 5.5 0.5 0 0 0</pose><link name="link"><collision name="col"><geometry><box><size>1.5 1.5 1.0</size></box></geometry></collision><visual name="vis"><geometry><box><size>1.5 1.5 1.0</size></box></geometry><material><ambient>1.0 0.9 0.1 1</ambient></material></visual></link></model>
+    <model name="yellow_obstacle_bottom"><static>true</static><pose>0 -5.0 0.5 0 0 0</pose><link name="link"><collision name="col"><geometry><box><size>1.5 1.5 1.0</size></box></geometry></collision><visual name="vis"><geometry><box><size>1.5 1.5 1.0</size></box></geometry><material><ambient>1.0 0.9 0.1 1</ambient></material></visual></link></model>
+    <model name="blue_shelf_center_top"><static>true</static><pose>1.5 1.5 0.75 0 0 0</pose><link name="link"><collision name="col"><geometry><box><size>4.0 1.0 1.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>4.0 1.0 1.5</size></box></geometry><material><ambient>0.5 0.8 1.0 1</ambient></material></visual></link></model>
+    <model name="blue_shelf_center_bottom"><static>true</static><pose>1.5 -1.5 0.75 0 0 0</pose><link name="link"><collision name="col"><geometry><box><size>4.0 1.0 1.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>4.0 1.0 1.5</size></box></geometry><material><ambient>0.5 0.8 1.0 1</ambient></material></visual></link></model>
+    <model name="blue_shelf_right_vertical"><static>true</static><pose>7.5 1.0 0.75 0 0 0</pose><link name="link"><collision name="col"><geometry><box><size>1.0 5.0 1.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>1.0 5.0 1.5</size></box></geometry><material><ambient>0.5 0.8 1.0 1</ambient></material></visual></link></model>
+    <model name="blue_shelf_left_angled"><static>true</static><pose>-4.0 -2.5 0.75 0 0 -0.628</pose><link name="link"><collision name="col"><geometry><box><size>5.0 1.0 1.5</size></box></geometry></collision><visual name="vis"><geometry><box><size>5.0 1.0 1.5</size></box></geometry><material><ambient>0.5 0.8 1.0 1</ambient></material></visual></link></model>
+
+    <!-- Robot with IMU Added -->
+    <model name="warehouse_robot">
+      <pose>0 0 0.15 0 0 0</pose>
+      <link name="base_link">
+        <inertial><mass>10.0</mass><inertia><ixx>0.1</ixx><iyy>0.2</iyy><izz>0.2</izz></inertia></inertial>
+        <collision name="collision"><geometry><box><size>0.5 0.3 0.15</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.5 0.3 0.15</size></box></geometry></visual>
+        <sensor name="imu_sensor" type="imu">
+          <always_on>true</always_on><update_rate>50</update_rate>
+          <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+            <ros><remapping>~/out:=imu</remapping></ros>
+          </plugin>
+        </sensor>
+      </link>
+      <link name="left_wheel"><pose>0.0 0.18 -0.05 1.5707 0 0</pose><inertial><mass>1.0</mass><inertia><ixx>0.005</ixx><iyy>0.005</iyy><izz>0.005</izz></inertia></inertial><collision name="collision"><geometry><cylinder><radius>0.1</radius><length>0.05</length></cylinder></geometry></collision><visual name="visual"><geometry><cylinder><radius>0.1</radius><length>0.05</length></cylinder></geometry></visual></link>
+      <link name="right_wheel"><pose>0.0 -0.18 -0.05 1.5707 0 0</pose><inertial><mass>1.0</mass><inertia><ixx>0.005</ixx><iyy>0.005</iyy><izz>0.005</izz></inertia></inertial><collision name="collision"><geometry><cylinder><radius>0.1</radius><length>0.05</length></cylinder></geometry></collision><visual name="visual"><geometry><cylinder><radius>0.1</radius><length>0.05</length></cylinder></geometry></visual></link>
+      <link name="front_caster"><pose>0.2 0 -0.1 0 0 0</pose><inertial><mass>0.2</mass><inertia><ixx>0.0001</ixx><iyy>0.0001</iyy><izz>0.0001</izz></inertia></inertial><collision name="collision"><geometry><sphere><radius>0.05</radius></sphere></geometry></collision></link>
+      <link name="rear_caster"><pose>-0.2 0 -0.1 0 0 0</pose><inertial><mass>0.2</mass><inertia><ixx>0.0001</ixx><iyy>0.0001</iyy><izz>0.0001</izz></inertia></inertial><collision name="collision"><geometry><sphere><radius>0.05</radius></sphere></geometry></collision></link>
+      <link name="lidar_link"><pose>0.2 0 0.15 0 0 0</pose><sensor name="lidar" type="ray"><always_on>true</always_on><visualize>true</visualize><update_rate>10</update_rate><ray><scan><horizontal><samples>360</samples><resolution>1</resolution><min_angle>-3.14159</min_angle><max_angle>3.14159</max_angle></horizontal></scan><range><min>0.15</min><max>12.0</max><resolution>0.01</resolution></range></ray><plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so"><ros><remapping>~/out:=scan</remapping></ros><output_type>sensor_msgs/LaserScan</output_type></plugin></sensor></link>
+      <joint name="left_wheel_joint" type="revolute"><parent>base_link</parent><child>left_wheel</child><axis><xyz>0 0 1</xyz></axis></joint>
+      <joint name="right_wheel_joint" type="revolute"><parent>base_link</parent><child>right_wheel</child><axis><xyz>0 0 1</xyz></axis></joint>
+      <joint name="front_caster_joint" type="fixed"><parent>base_link</parent><child>front_caster</child></joint>
+      <joint name="rear_caster_joint" type="fixed"><parent>base_link</parent><child>rear_caster</child></joint>
+      <joint name="lidar_joint" type="fixed"><parent>base_link</parent><child>lidar_link</child></joint>
+      <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so"><update_rate>50</update_rate><left_joint>left_wheel_joint</left_joint><right_joint>right_wheel_joint</right_joint><wheel_separation>0.36</wheel_separation><wheel_diameter>0.2</wheel_diameter><command_topic>cmd_vel</command_topic><odometry_topic>odom</odometry_topic><odometry_frame>odom</odometry_frame><robot_base_frame>base_link</robot_base_frame><publish_odom>true</publish_odom><publish_odom_tf>true</publish_odom_tf></plugin>
+    </model>
+  </world>
+</sdf>
